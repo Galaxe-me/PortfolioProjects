@@ -80,7 +80,7 @@ SELECT *
 FROM movies
 ORDER BY budget DESC;
 
--- Checking budget and gross relationship -- scatterplot or heatmap
+-- Checking budget and gross relationship
 SELECT budget, gross
 FROM movies
 ORDER BY gross;
@@ -89,7 +89,7 @@ ORDER BY gross;
 SELECT score, ROUND(AVG(gross), 2)
 FROM movies
 GROUP BY score
-ORDER BY gross;
+ORDER BY score;
 
 -- Checking rating and gross relationship
 SELECT rating, ROUND(AVG(gross), 2) AS "average gross"
